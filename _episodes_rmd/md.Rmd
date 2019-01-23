@@ -1,0 +1,34 @@
+---
+title: "Testing bach code"
+author: "Greg Tucker-Kellogg"
+date: "January 15, 2019"
+output:
+  md_document:
+    variant: markdown_github
+---
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("../bin/chunk-options.R")
+```
+
+## an R chunk
+
+
+```{r cars}
+summary(cars)
+```
+
+## a bash chunk
+
+You can also embed plots, for example:
+
+```{bash test}
+ls -l
+```
+
+```{r knit, echo=TRUE}
+knitr::knit("md.Rmd", output = "md.md")
+```
+

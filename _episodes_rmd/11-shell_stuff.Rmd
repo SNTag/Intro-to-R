@@ -1,0 +1,26 @@
+---
+title: "Untitled"
+author: "Greg Tucker-Kellogg"
+date: "January 15, 2019"
+output:
+  md_document:
+    variant: markdown_github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("../bin/chunk-options.R")
+```
+
+## Some shell stuff
+
+```{bash}
+ls -l
+echo $HOMEo
+```
+
+```{bash}
+ls --help
+```
+{: .bash}
+
