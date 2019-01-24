@@ -1,20 +1,24 @@
 ---
-title: Data types in R
-teaching: 5
-exercises: 0
+title: R data types
+teaching: 10
+exercises: 10
 questions: 
 - How is data represented in R?
 - How do we extract specific entries in R?
 objectives: 
-- Recognise the different data types in R.
+- Recognise and the different basic data types in R.
 - Be able to index and subset different classes of data in R. 
+- Be able to read in and explore data in data frames
 keypoints: 
-- Both data frame and matrix are two dimensional objects with rows and columns. 
-- Data frames can have different modes of data for different columns, while all the
-  entries in the matrix must be of the same mode.
+- Both data frames and matrices are two dimensional objects with rows and columns, but data frame columns can be of different types.
 - Subsetting can be done with [] or [[]] in R.
 ---
 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("../bin/chunk-options.R")
+```
 ## R data has types
 
 Objects in R represent data, and data comes in different types. The data type may by
@@ -23,6 +27,38 @@ frames, lists, and sophisticated objects. In R, variable typing is dynamic: you 
 to specify the type of a variable before you assign a value to it. But the data type is
 important, because it determines what operations are valid: you can take the sum of
 numeric data, but not character data.
+
+## Atomic data types
+
+The simplest data in R is *atomic*, it cannot be broken down into smaller pieces of data. R has six atomic data types:
+
+logical 
+: Logical data is either `TRUE` or `FALSE`
+
+integer
+: integer data should be self explanatory, but numeric data is represented as real numbers unless you ask for it as integer. As far as R is concerned, `1` is  real number, but `1L` is an integer.
+
+numeric
+: numeric data is the default for real numbers. 
+
+complex
+: R supports complex numbers as a basic data type.
+
+character
+: a string, like "this is a string" is called "character" data. 
+
+raw
+: The "raw" type is not something we are likely to use.
+
+
+Most functions expect data to be of a certain type, but they may be written to handle different types. Remember `sqrt()`? It expects a real value as its argument, and expects to return a real value as a result. But if you want to deal with complex numbers, you can:
+
+```{r}
+sqrt(-1)
+sqrt(as.complex(-1))
+```
+
+
 
 
 ## Data classes in R

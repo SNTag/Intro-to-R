@@ -59,5 +59,12 @@ hook_error <- function(x, options) {
                  "\n~~~\n{: .error}\n\n")
 }
 
+hook_warning <- function(x, options) {
+  x <- gsub("\n$", "", x)
+  stringr::str_c("\n\n~~~\n",
+                 paste0(x, collapse="\n"),
+                 "\n~~~\n{: .warning}\n\n")
+}
+
 knit_hooks$set(source = hook_in, output = hook_out, warning = hook_error,
                error = hook_error, message = hook_out)

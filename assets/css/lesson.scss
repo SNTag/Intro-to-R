@@ -130,7 +130,7 @@ $codeblock-padding: 6px !default;
 .osx, blockquote .osx { @include bkSetup($color-system, "\f179"); }
 .windows, blockquote .windows { @include bkSetup($color-system, "\f17a",$weight: 500); }
 .callout{ @include bkSetup($color-callout, "\f08d"); }
-.challenge{ @include bkSetup($color-challenge, "\f044"); }
+.challenge{ @include bkSetup($color-challenge, "\f44b"); }
 .checklist{ @include bkSetup($color-checklist, "\f14a"); }
 .discussion{ @include bkSetup($color-discussion, "\f086"); }
 .keypoints{ @include bkSetup($color-keypoints, "\f084"); }
