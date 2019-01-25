@@ -18,8 +18,8 @@ EVENTBRITE_PATTERN = r'\d{9,10}'
 URL_PATTERN = r'https?://.+'
 
 # Defaults.
-CARPENTRIES = ("dc", "swc", "lc", "cp")
-DEFAULT_CONTACT_EMAIL = 'admin@software-carpentry.org'
+CARPENTRIES = ("dc", "swc", "lc", "cp", "")
+DEFAULT_CONTACT_EMAIL = 'dbsgtk@nus.edu.sg'
 
 USAGE = 'Usage: "workshop_check.py path/to/root/directory"'
 

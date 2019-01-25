@@ -5,6 +5,7 @@
 MAKEFILES=Makefile $(wildcard *.mk)
 JEKYLL=jekyll
 JEKYLL_VERSION=3.7.3
+JEKYLL_SERVER_PORT=4001
 PARSER=bin/markdown_ast.rb
 DST=_site
 
@@ -23,7 +24,7 @@ docker-serve :
 
 ## serve            : run a local server.
 serve : lesson-md
-	${JEKYLL} serve
+	${JEKYLL} serve --port ${JEKYLL_SERVER_PORT}
 
 ## site             : build files but do not run a server.
 site : lesson-md

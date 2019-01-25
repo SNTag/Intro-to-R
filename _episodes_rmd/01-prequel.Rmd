@@ -2,10 +2,11 @@
 title: "Getting started with R and RStudio"
 author: "Greg Tucker-Kellogg"
 date: "January 21, 2019"
+source: Rmd
 output: 
   html_document:
     fig_caption: yes
-teaching: 10
+teaching: 5
 exercises: 5
 objectives:
 - "Understand and describe two ways of using R interactively: The R console and RStudio"
@@ -105,7 +106,7 @@ hist(x)
 
 ## RStudio
 
-R is the language and interpreter, whereas [RStudio][RStudio] is a professional
+R is the language and interpreter, whereas [RStudio][rstudio] is a professional
 development environment that includes a code editor, debugging tools, and a server
 available from a browser. A screenshot of the RStudio interface is shown below. We
 encourage the use of RStudio as an interface to R.
@@ -114,7 +115,6 @@ encourage the use of RStudio as an interface to R.
 
 In RStudio, the console, graphics, help windows, scripts, and a data explorer tool are all integrated into one graphical interface. 
 
-{% include links.md %}
 
 > ## Try it!
 > 
@@ -172,7 +172,7 @@ In RStudio, the console, graphics, help windows, scripts, and a data explorer to
 
 ## One last preparation step
 
-- Using RStudio, create a new project in a new directory (I suggest the destkop). Call it whatever you want. 
+- Using RStudio, create a New Project (File -> New Project) in a new directory (I suggest the Desktop). Call the project whatever you want. 
 - Under the Files tab on the right (!), create a new folder called "data". We will use this later in the session.
 
-
+{% include links.md %}

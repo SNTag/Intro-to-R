@@ -4,6 +4,7 @@
 title: "Basic R language syntax"
 author: "Greg Tucker-Kellogg"
 date: "January 21, 2019"
+source: Rmd
 output: 
   html_document:
     fig_caption: yes
@@ -239,5 +240,4 @@ NULL
 
 
 
-
-
+{% include links.md %}

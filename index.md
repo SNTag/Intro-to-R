@@ -3,7 +3,7 @@ layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
-FIXME: home page introduction
+This is a short introduction to R for students with no experience in the language, or possibly any computer programming language.
 
 <!-- this is an html comment -->
 
@@ -11,7 +11,7 @@ FIXME: home page introduction
 
 > ## Prerequisites
 >
-> FIXME
+> Installed R and RStudio
 {: .prereq}
 
 {% include links.md %}
