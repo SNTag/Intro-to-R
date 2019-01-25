@@ -231,7 +231,7 @@ We can calculate very quickly and efficiently the correlation coefficients betwe
 > cor(iris$Sepal.Width, iris$Petal.Width)
 [1] -0.3661259
 ~~~
-{: .R}
+{: .language-r}
 
 In the above snippet, we calculated the correlation between two variables -- sepal width and petal width. What if we wanted to calculate the pairwise correlation of all the different variables? Do we calculate all the possible pairs, and then tabulate our own table? Fortunately, this is not the case. From the manual, we see that 'x' can be a dataframe or a matrix. Furthermore, we also know that if x is a data frame or a matrix, we get pairwise correlations. So for instance
 
@@ -239,7 +239,7 @@ In the above snippet, we calculated the correlation between two variables -- sep
 > cor(iris)
 Error in cor(iris) : 'x' must be numeric
 ~~~
-{: .R}
+{: .language-r}
 
 What was happening? As it turns out, the error was thrown because column 5 of our data contains information about Species. However, this information is not stored as a numeric data. As a result, the correlation cannot be calculated. Throwing a quick fix by excluding the problematic column (or including only the first 4 columns):
 
@@ -251,7 +251,7 @@ Sepal.Width    -0.1175698   1.0000000   -0.4284401  -0.3661259
 Petal.Length    0.8717538  -0.4284401    1.0000000   0.9628654
 Petal.Width     0.8179411  -0.3661259    0.9628654   1.0000000
 ~~~
-{: .R}
+{: .language-r}
 
 Instead of a number, `cor()` now provides us a correlation matrix between all 4 variables. Quite handy! 
 
@@ -260,6 +260,4 @@ Instead of a number, `cor()` now provides us a correlation matrix between all 4 
 
 Calculating correlations is one of the most common tasks in analysis. However, it is important to be aware of the limitations of using correlation coefficients as well as the underlying assumptions for each type of correlation coefficient. 
 
-
-
-
+{% include links.md %}

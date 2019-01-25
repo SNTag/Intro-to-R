@@ -290,3 +290,6 @@ beginning of the string.
 A version of `grep` is found in bash. For those interested, it is worth
 learning more about the different regular expressions that can be used with
 `grep`. More can be found at [This link](http://www.memoryhacking.com/Misc/Tut/Wildcards%20and%20Regular%20Expressions.htm)
+
+
+{% include links.md %}

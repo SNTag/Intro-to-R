@@ -74,3 +74,5 @@ The last of the three is incredibly lengthy(running some 100 pages), but extreme
 
 ### R-bloggers
 This is a blog site dedicated to discussing R. Because it is assumed that most people viewing the site are already proficient in R, it is not necessarily the best place to seek help. However, there are many informative articles discussing various aspects of R programming, often complete with code snippets for one who is interested in trying things out. For that reason, I am including this resource in the list of resources for R programming.
+
+{% include links.md %}

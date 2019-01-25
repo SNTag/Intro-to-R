@@ -84,13 +84,16 @@ Arguments:
           ‘ylab’ a title for the y axis: see ‘title’.
 
 ~~~ 
-{: .output) 
+{: .output} 
 
 > ## Named arguments v.s. ordered arguments in R
 > There are 2 ways that we can tell R what values are assigned to each argument: by order, and by name. R assumes that we are supplying arguments by order unless we explicitly state the argument name. For example, consider the following code snippet:
+
 ~~~
 write.table(iris, "data/iris.txt")
 ~~~
+{: .language-r}
+
 > In the above snippet, R assumes that the first value corresponds to the first argument of `write.table()`, while the second value corresponds to the seconf argument of `write.table()`. However, in the case of `plot()`, you will notice from the manual that only 2 arguments (x and y) are stated, with `...` trailing suggesting other arguments. In these cases, we will need to provide named arguments to the function. 
 
 ## Our first plot in R
@@ -102,7 +105,7 @@ plot (iris$Sepal.Length, iris$Sepal.Width, type="p",
 	xlab="Sepal length", 
 	ylab="Sepal width")
 ~~~
- {: .R}
+ {: .language-r}
  
  The output graph will look like this:
  
@@ -113,8 +116,10 @@ We had used the `xlab` and `ylab` arguments to specify what our axis labels are,
 Earlier, we had talked about how a feature associated with R is the fact that the same function will lead to different behavior depending on the data type. In our above example, we had both numeric data for x and y. However, what happens if we had indicated the x-axis to be the species? 
 
 > ## Try it
-> Modify the above code snippet to plot on the x-axis the flower species and on the y-axis sepal length, but still supplying the `type="p"` argument. What type plot do you see?  
+> Modify the above code snippet to plot on the x-axis the flower species and on the y-axis sepal length, but still supplying the `type="p"` argument. What type plot do you see?
+ {: .challenge} 
  
 ## Customization of plots in R
 By associating different arguments with different aspect of the resulting graphic, users have complete control over the graph. For more information on how to control the different aspects of plotting graphics in R  using base graphics, refer to this site: https://www.datacamp.com/community/tutorials/15-questions-about-r-plots#gs.XJbJw5o.
  
+ {% include links.md %}

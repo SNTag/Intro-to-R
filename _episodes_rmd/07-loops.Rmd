@@ -2,6 +2,7 @@
 title: "R control structures"
 teaching: 10
 exercises: 15
+source: Rmd
 questions:
 - "How do we automate tasks in R?"
 objectives: 
@@ -48,12 +49,6 @@ for (year in 2010:2015) {
   print(paste("The year is", year))
 }
 ```
-
-How do we understand what the *for* loop is doing? One way to do it is to read it as follows: 
-
-> for every entry in the vector (here, the vector contains the individual years), the code is executed and the variable (in this case, year)
-> is substituted in the code block (that is, year in the paste gets substituted with the present value of year). Once the evaluation is completed
-> for every entry in the vector, the code stops and exits. 
 
 The general skeleton of a *for* loop is as such:
 
@@ -205,6 +200,7 @@ apply(m, 2, mean)
 [1]  5.5 15.5
 ~~~
 {: .language-r}
+
 If we want to apply the function along the rows, then the margin is "1". Similarly, if we want to apply the function along the columns, then the margin will be two. We can apply a value along both rows and columns (that is, to every single element) by specifying the margin to be both "1" and "2" (that is, `c(1,2)`). 
 
 ### *lapply*
@@ -246,3 +242,5 @@ $b
 [1] 155
 ~~~
 {: .language-r}
+
+   {% include links.md %}

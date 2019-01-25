@@ -14,7 +14,10 @@ The [R project for statistical computing][r-lang] provides the R programming env
 > be equivalent to downloading from CRAN, except that the Ubuntu package manager may be slightly
 > behind the most recent R version release. To install using apt, type
 > 
->     sudo apt-get install r-base-core
+>  ~~~
+>  sudo apt-get install r-base-core
+>  ~~~
+> {: .language-bash}
 >
 > You need to use `sudo` for this command because installing software using apt requires administrator privileges. You will be prompted for an administrator (privileged) password.
 {: .linux}

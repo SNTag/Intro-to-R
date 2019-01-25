@@ -4,6 +4,7 @@
 title: "R packages and the environment"
 author: "Greg Tucker-Kellogg"
 date: "January 21, 2019"
+source: Rmd
 output: 
   html_document:
     fig_caption: yes
